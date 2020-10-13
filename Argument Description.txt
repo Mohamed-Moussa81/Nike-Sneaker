@@ -1,0 +1,40 @@
+--username
+Username for login
+
+--password
+Password for login
+
+--url
+URL for desired shoe
+
+--shoe-size
+Self-explanatory (NOTE: this fails if both women and men sizes are available)
+
+--login-time
+If given, the bot will pause until a specific time before it logs in (can be any datetime format)
+
+--release-time
+If given, the bot will pause until a specific time before it purchase the sneaker (can be any datetime format)
+
+--screenshot-path
+If given, the bot will take a screenshot of the page after purchasing and save it at the given file path (may be useful for debugging)
+
+--html-path
+If given, the bot will take the page source after purchasing and save it at the given file path (may be useful for debugging)
+
+--page-load-timeout
+This is used to limit the page load time (in seconds), which can be useful when the page is still loading, but the UI is nevertheless useable. This is pretty much a necessity as I've noticed Nike's pages hang all the time. I'd recommend using 1-3 seconds for this.
+
+--driver-type
+Should be 'firefox' or 'chrome' (the OS will be determined for you)
+
+--headless
+This will run the driver in headless mode, which should make the bot quicker
+
+--select-payment
+If you already have your payment options pre-saved on your Nike account, DO NOT use this. If for some reason you don't have it pre-saved (even though it will cost the bot more time) the bot will select the first payment option it finds.
+--purchase
+If this argument is given, the bot WILL attempt to purchase the shoe so USE WITH CAUTION!
+
+--num-retries
+If the bot fails for some reason, it will retry any number of times or until successful
